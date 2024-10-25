@@ -20,14 +20,14 @@ adminRouter.get('/confession');
 
 //blogs
 adminRouter.get('/blogs');
-adminRouter.get('/blogs/catagory');
+adminRouter.get('/blogs/catagory/');
+adminRouter.get('/blogs/catagory/:catagoryName/');
 
 //update blog
-adminRouter.put('/blogs/:id');
+adminRouter.put('/blogs//blogs/catagory/:catagoryName/:id');
 //delete blog
-adminRouter.delete('/blogs/:id');
+adminRouter.delete('/blogs/catagory/:catagoryName/:id');
 //write blog
-adminRouter.put('/blogs/:id');
-
+adminRouter.post('/blogs/catagory/:catagoryName/write');
 
 module.exports = adminRouter;
