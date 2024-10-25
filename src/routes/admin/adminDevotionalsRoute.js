@@ -1,8 +1,8 @@
 const express = require('express');
-const adminRouter = express.Router();
+const adminDevotionalsRouter = express.Router();
 
-adminRouter.get('/devotionals');
-adminRouter.get('/devotionals/:id');
-adminRouter.post('/devotionals');
-adminRouter.put('/devotionals/:id');
-adminRouter.delete('/devotionals/:id');
+adminDevotionalsRouter.get('/devotionals');
+adminDevotionalsRouter.get('/devotionals/:id');
+adminDevotionalsRouter.post('/devotionals');
+adminDevotionalsRouter.put('/devotionals/:id');
+adminDevotionalsRouter.delete('/devotionals/:id');
