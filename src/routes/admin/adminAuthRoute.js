@@ -1,12 +1,11 @@
 const express = require('express');
 const adminRouter = express.Router();
 
-//Auth
-adminRouter.post("/register");
-adminRouter.post("/login");
-
 //Dashboard/Home (Admin)
 adminRouter.get('/');
 
+//Auth
+adminRouter.post("/register");
+adminRouter.post("/login");
 
 module.exports = adminRouter;
