@@ -8,15 +8,15 @@ const adminDevotionalsRouter = require("../routes/admin/adminDevotionalsRoute");
 
 const app = express();
 
-//middleware
+// Middleware
 app.use(express.json());
 
-//routes
-app.use("/api/v1/admin", adminRouter);
-app.use("/api/v1/admin", adminArticleRouter);
-app.use("/api/v1/admin", adminBooksRouter);
-app.use("/api/v1/admin", adminConfessionsRouter);
-app.use("/api/v1/admin", adminCreedRouter);
-app.use("/api/v1/admin", adminDevotionalsRouter);
+// Admin Routes
+app.use("/api/v1/admin/auth", adminRouter); // Authentication routes
+app.use("/api/v1/admin/articles", adminArticleRouter); // Article routes
+app.use("/api/v1/admin/books", adminBooksRouter); // Book routes
+app.use("/api/v1/admin/confessions", adminConfessionsRouter); // Confession routes
+app.use("/api/v1/admin/creeds", adminCreedRouter); // Creed routes
+app.use("/api/v1/admin/devotionals", adminDevotionalsRouter); // Devotional routes
 
 module.exports = app;
