@@ -6,3 +6,7 @@ adminBooksRouter.get('/books/:id');
 adminBooksRouter.post('/books');
 adminBooksRouter.put('/books/:id');
 adminBooksRouter.delete('/books/:id');
+
+//Book Categories
+adminBooksRouter.get('/book-categories');
+adminBooksRouter.post('/book-categories');
