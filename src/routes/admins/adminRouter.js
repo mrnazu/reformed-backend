@@ -10,13 +10,18 @@ adminRouter.post("/login");
 adminRouter.get('/');
 //creed
 adminRouter.get('/creed');
-//books
-adminRouter.get('/books');
 //devotionals
 adminRouter.get('/devotionals');
 //confession
 adminRouter.get('/confession');
 
+
+//books
+adminRouter.get('/books'); // get all books
+adminRouter.get('/books/:id'); // get single book
+adminRouter.post('/books/:id'); // post book
+adminRouter.delete('/books/:id'); // delete book
+adminRouter.put('/books/:id'); // update or edit book
 
 //blogs
 adminRouter.get('/blogs');
