@@ -8,19 +8,7 @@ adminRouter.post("/login");
 //Dashboard/Home (Admin)
 adminRouter.get('/');
 
-//Confessions
-adminRouter.get('/confessions');
-adminRouter.get('/confessions/:id');
-adminRouter.post('/confessions');
-adminRouter.put('/confessions/:id');
-adminRouter.delete('/confessions/:id');
 
-//Devotionals
-adminRouter.get('/devotionals');
-adminRouter.get('/devotionals/:id');
-adminRouter.post('/devotionals');
-adminRouter.put('/devotionals/:id');
-adminRouter.delete('/devotionals/:id');
 
 //Books
 adminRouter.get('/books');
