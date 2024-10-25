@@ -8,15 +8,6 @@ adminRouter.post("/login");
 //Dashboard/Home (Admin)
 adminRouter.get('/');
 
-
-
-//Books
-adminRouter.get('/books');
-adminRouter.get('/books/:id');
-adminRouter.post('/books');
-adminRouter.put('/books/:id');
-adminRouter.delete('/books/:id');
-
 //Book Categories
 adminRouter.get('/book-categories');
 adminRouter.post('/book-categories');
