@@ -7,6 +7,7 @@ const authRoute = require("../routes/authRoute");
 const userBooksRoute = require("../routes/user/userBooksRoute");
 const userConfessionRoute = require("../routes/user/userConfessionsRoute");
 const userCreedRoute = require("../routes/user/userCreedsRoute");
+const userDevotionalsRouter = require("../routes/user/userDevotionalsRoute");
 
 const app = express();
 
@@ -25,5 +26,6 @@ app.use("/api/v1/admin/books", adminBooksRouter);
 app.use("/api/v1/user/books", userBooksRoute);
 app.use("/api/v1/user/confessions", userConfessionRoute);
 app.use("/api/v1/user/creeds", userCreedRoute);
+app.use("/api/v1/user/devotionals", userDevotionalsRouter);
 
 module.exports = app;
