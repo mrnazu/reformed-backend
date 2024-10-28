@@ -1,5 +1,4 @@
 const express = require("express");
-
 const userCreedRoute = express.Router();
 
 const creeds = [
