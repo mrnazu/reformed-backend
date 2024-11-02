@@ -15,13 +15,13 @@ const bookSchema = new Schema(
         type: String,
         required: true,
     },
-    cover: {
-        
+    coverImage: {
+        type: String,
+        required: true,
     },
-    subject: {
-      type: Schema.Types.ObjectId,
-      ref: "Subject",
-      required: true,
+    fileUpload: {
+        type: String,
+        required: true,
     },
     catagory: {
       type: Schema.Types.ObjectId,
@@ -39,7 +39,7 @@ const bookSchema = new Schema(
       default: "pending",
       enum: ["pending", "live"],
     },
-    createdBy: {
+    uploadedBy: {
       type: Schema.Types.ObjectId,
       ref: "Admin",
       required: true,
